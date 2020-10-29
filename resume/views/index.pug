@@ -1,0 +1,156 @@
+extends layout
+
+block content
+  h1= title
+  
+  doctype html
+  head
+  meta(charset='utf-8')
+  style
+      include styles.css
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  meta(name='description' content='')
+  meta(name='author' content='')
+  title Resume - Start Bootstrap Theme
+  link(rel='icon' type='image/x-icon' href='assets/img/favicon.ico')
+  link(rel="stylesheet", href="s.css", type="text/css")
+  // Font Awesome icons (free version)
+  script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js' crossorigin='anonymous')
+  // Google fonts
+  link(href='https://fonts.googleapis.com/css?family=Abhaya Libre')
+  
+  link(rel='styelsheet', href='https://fonts.googleapis.com/css?family=Cinzel:900|Lato:300i', type='text/css')
+
+  link(href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i')
+  // Core theme CSS (includes Bootstrap)
+ 
+  // Navigation
+  nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
+  a.navbar-brand.js-scroll-trigger(href='#page-top')
+    span.d-block.d-lg-none Aishwarya N R
+    span.d-none.d-lg-block
+      img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile.jpg' alt='')
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse
+    ul.navbar-nav
+      li.nav-item
+        a.nav-link.js-scroll-trigger(href='#about') About
+      li.nav-item
+        a.nav-link.js-scroll-trigger(href='#experience') Experience
+      li.nav-item
+        a.nav-link.js-scroll-trigger(href='#education') Education
+      li.nav-item
+        a.nav-link.js-scroll-trigger(href='#skills') Skills
+      li.nav-item
+        a.nav-link.js-scroll-trigger(href='#interests') Interests
+      li.nav-item
+        a.nav-link.js-scroll-trigger(href='#awards') Awards
+    // Page Content
+  .container-fluid.p-0
+    // About
+    section#about.resume-section
+    .resume-section-content
+      h1.mb-0
+        | Aishwarya 
+        span.text-primary N R
+      .subheading.mb-5
+        | #W-1, KIADB Quarters &middot; Bommasandra Industrial Area &middot; Bangalore - 99 &middot;
+        a(href='mailto:aishwaryaraman2000@gmail.com') aishwaryaraman2000@gmail.com
+      p.lead.mb-5
+        | Budding Software Developer 
+      
+      .social-icons
+        a.social-icon(href='#')
+          i.fab.fa-linkedin-in
+        a.social-icon(href='#')
+          i.fab.fa-github
+        a.social-icon(href='#')
+          i.fab.fa-twitter
+        a.social-icon(href='#')
+          i.fab.fa-facebook-f
+  hr.m-0
+  
+  // Education
+  section#education.resume-section
+    .resume-section-content
+      h2.mb-5 Education
+      
+        .flex-grow-1
+          h3.mb-0 PES Institute of Technology
+          .subheading.mb-3 Information Science and Engineering
+          
+          p CGPA: 8.4
+        .flex-shrink-0
+          span.text-primary 2017-21
+      .d-flex.flex-column.flex-md-row.justify-content-between
+        .flex-grow-1
+          h3.mb-0 VishwaChetana PU College
+          .subheading.mb-3 PCMC's
+          p Percentage : 96.67%
+        .flex-shrink-0
+          span.text-primary 2015-2017
+  hr.m-0
+  // Experience
+  section#experience.resume-section
+    .resume-section-content
+      h2.mb-5 Experience
+      .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+        .flex-grow-1
+          h3.mb-0 Technical Content Writer
+          .subheading.mb-3 Geek Glacier
+          p
+            | Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+        .flex-shrink-0
+          span.text-primary July - Sept 2020
+      .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+        .flex-grow-1
+    
+    
+  hr.m-0
+  // Skills
+  section#skills.resume-section
+    .resume-section-content
+      h2.mb-5 Skills
+      .subheading.mb-3 Programming Languages &amp; Tools
+      ul.list-inline.dev-icons
+        li.list-inline-item
+          i HTML,CSS
+          i Javascript
+          i Python
+          i Java
+    
+    
+  hr.m-0
+  // Interests
+  section#interests.resume-section
+    .resume-section-content
+      h2.mb-5 Interests
+      p
+        | Apart from being a web developer, I enjoy most of my time being outdoors. I enjoy playing badminton.
+      p.mb-0
+        | Chess is also part of my hobbies, that I'd enjoying playing.
+      p.mb-0
+        | Art and Craft adds on to my hobby list as well.
+      hr.m-0
+  // Awards
+  section#awards.resume-section
+    .resume-section-content
+      h2.mb-5 Awards &amp; Certifications
+      ul.fa-ul.mb-0
+        li
+          span.fa-li
+            i.fas.fa-trophy.text-warning
+          |                             Secured 82 percentile in NCAT category 2
+        li
+          span.fa-li
+            i.fas.fa-trophy.text-warning
+          |                            National Level Essay Competition - Concept Prize Winner
+       
+  // Bootstrap core JS
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+  script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js')
+  // Third party plugin JS
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+  // Core theme JS
+  script(src='js/scripts.js')
